@@ -1,0 +1,124 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif; /* Set the main font */
+  padding-top: 70px; /* Offset for fixed navbar */
+  background-color: #f5f5f5; /* Optional background color */
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #333; /* Adjust background color for navbar */
+  box-shadow: 0 4px 8px rgba(22, 21, 21, 0.1); /* Soft shadow for depth */
+}
+
+#navbarNav {
+  display: block; /* Default display for desktop */
+  overflow: hidden;
+  max-height: none; /* Allow items to be fully visible on desktop */
+  opacity: 1; /* Fully visible on desktop */
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  margin: 0 10px;
+  color: #ffffff; /* Ensures visibility on dark background */
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #4caf50; /* Highlight color on hover */
+}
+
+/* Navbar Brand */
+.navbar-brand {
+  white-space: nowrap;
+  font-size: 24px;
+  transition: color 0.3s;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ffffff; /* White for visibility on dark background */
+}
+
+.navbar-brand:hover {
+  color: #4caf50;
+}
+
+/* Navbar toggler styles */
+.navbar-toggler {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* For mobile view */
+@media (max-width: 768px) {
+  #navbarNav {
+      max-height: 0; /* Collapsed items initially */
+      opacity: 0; /* Hidden by default */
+  }
+
+  #navbarNav.show {
+      max-height: 300px; /* Set a maximum height that fits all navbar items */
+      opacity: 1; /* Visible when expanded */
+  }
+}
+
+/* Navbar items animation */
+.navbar-nav.show .nav-item {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+.footer-text {
+  padding: 0; /* Fixed padding issue */
+  padding-top: 20px;
+  color: #f5f9f5;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%); /* Start off the screen to the left */
+  }
+  100% {
+    transform: translateX(0); /* Slide to the center */
+  }
+}
+
+/* Custom styles for all images */
+img {
+  width: 100%; /* Ensures all images are responsive */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+  object-fit: cover; /* Ensures images cover the area without distortion */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow to images */
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+  padding: 5px;
+}
+
+img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.social-links{
+  color: rgb(157, 234, 176);
+}
