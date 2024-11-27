@@ -122,3 +122,51 @@ img:hover {
 .social-links{
   color: rgb(157, 234, 176);
 }
+
+
+/* Responsive navbar for tablets and mobile */
+@media (max-width: 1024px) {
+  #navbarNav {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+  }
+
+  #navbarNav.show {
+    max-height: 300px; /* Adjust max height as needed */
+    opacity: 1;
+  }
+}
+
+/* Additional fixes for tablet-specific behavior */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar-toggler {
+    display: block; /* Ensure toggler is visible */
+  }
+
+  .navbar-collapse {
+    display: none; /* Ensure it stays hidden unless toggler is clicked */
+  }
+
+  .navbar-collapse.show {
+    display: block;
+  }
+}
+
+/* Ensure desktop devices and larger tablets have proper behavior */
+@media (min-width: 1025px) {
+  .navbar-toggler {
+    display: none; /* Hide the navbar toggler for desktop */
+  }
+
+  #navbarNav {
+    display: flex; /* Display the navbar items inline */
+    opacity: 1; /* Fully visible on desktop */
+  }
+
+  #navbarNav.show {
+    max-height: none; /* Allow the navbar to expand fully on desktop */
+    opacity: 1;
+  }
+}

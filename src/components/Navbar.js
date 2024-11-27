@@ -37,7 +37,7 @@ function Navbar() {
   return (
     <header className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
       <div className="container">
-        <a className="navbar-brand" href="#home">Tech TSR</a> {/* Change href here */}
+        <a className="navbar-brand" href="https://youtube.com/@tech-tsr?si=LRjId0mKtnsNxRM1">Tech TSR</a> {/* Change href here */}
         <button 
           className="navbar-toggler" 
           type="button" 
