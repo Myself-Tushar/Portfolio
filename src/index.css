@@ -13,6 +13,9 @@ body {
 .navbar {
   background-color: #333; /* Adjust background color for navbar */
   box-shadow: 0 4px 8px rgba(22, 21, 21, 0.1); /* Soft shadow for depth */
+  display: flex;
+  justify-content: space-between; /* Ensures navbar content is spaced out */
+  align-items: center; /* Vertically centers items */
 }
 
 #navbarNav {
@@ -61,13 +64,13 @@ body {
 /* For mobile view */
 @media (max-width: 768px) {
   #navbarNav {
-      max-height: 0; /* Collapsed items initially */
-      opacity: 0; /* Hidden by default */
+    max-height: 0; /* Collapsed items initially */
+    opacity: 0; /* Hidden by default */
   }
 
   #navbarNav.show {
-      max-height: 300px; /* Set a maximum height that fits all navbar items */
-      opacity: 1; /* Visible when expanded */
+    max-height: 300px; /* Set a maximum height that fits all navbar items */
+    opacity: 1; /* Visible when expanded */
   }
 }
 
@@ -79,15 +82,14 @@ body {
 /* Keyframes for fade-in animation */
 @keyframes fadeIn {
   from {
-      opacity: 0;
-      transform: translateY(-10px);
+    opacity: 0;
+    transform: translateY(-10px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
-
 
 .footer-text {
   padding: 0; /* Fixed padding issue */
@@ -119,13 +121,17 @@ img:hover {
   transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
-.social-links{
+.social-links {
   color: rgb(157, 234, 176);
 }
 
-
 /* Responsive navbar for tablets and mobile */
 @media (max-width: 1024px) {
+  .navbar-toggler {
+    display: block !important;
+    margin-left: auto !important; /* Align the toggler icon to the right */
+  }
+
   #navbarNav {
     max-height: 0;
     overflow: hidden;
@@ -164,9 +170,44 @@ img:hover {
     display: flex; /* Display the navbar items inline */
     opacity: 1; /* Fully visible on desktop */
   }
+}
 
-  #navbarNav.show {
-    max-height: none; /* Allow the navbar to expand fully on desktop */
-    opacity: 1;
+/* Ensure the navbar-toggler is visible on devices smaller than or equal to 1366px and is aligned to the right */
+@media (max-width: 1366px) {
+  .navbar-toggler {
+    display: block !important; /* Ensure it's always visible */
+    margin-left: auto !important; /* Push the toggle icon to the right */
+  }
+}
+
+/* Adjust container layout */
+.container {
+  display: flex;
+  justify-content: space-between; /* Space between the brand and the toggler */
+  align-items: center;
+}
+
+/* Custom text size */
+.custom-text-3xl {
+  font-size: 1.75rem; /* Adjust to your desired size */
+  font-weight: bold;
+  line-height: 1.25; /* Adjust leading (line-height) as needed */
+}
+
+@media (min-width: 640px) { /* sm breakpoint */
+  .custom-text-3xl {
+    font-size: 2rem; /* Similar to sm:text-4xl */
+  }
+}
+
+@media (min-width: 768px) { /* md breakpoint */
+  .custom-text-3xl {
+    font-size: 2.25rem; /* Similar to md:text-5xl */
+  }
+}
+
+@media (min-width: 1024px) { /* lg breakpoint */
+  .custom-text-3xl {
+    font-size: 2.5rem; /* Similar to lg:text-6xl */
   }
 }

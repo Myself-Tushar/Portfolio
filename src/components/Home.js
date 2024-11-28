@@ -7,7 +7,7 @@ function Home() {
       className="home h-screen flex flex-col items-center justify-center text-center bg-gradient-to-r from-gray-900 via-gray-700 to-gray-600 text-white px-4"
     >
       {/* Heading */}
-      <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+      <h1 className="custom-text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
         Hi, I'm <span className="text-green-400">Tushar Singha</span>
       </h1>
 

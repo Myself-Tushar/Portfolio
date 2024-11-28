@@ -8,7 +8,7 @@ function Contact() {
 
   return (
     <section id="contact" className="py-5 bg-dark text-white text-center">
-      <div className="container">
+      <div className="containerr">
         <h2 className="display-6 fw-bold mb-4">Contact Me</h2>
         <form className="row g-3 justify-content-center" onSubmit={showMessage}>
           <div className="col-md-6">
