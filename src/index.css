@@ -9,6 +9,13 @@ body {
   background-color: #f5f5f5; /* Optional background color */
 }
 
+html, body {
+  
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  box-sizing: border-box; /* Ensure padding/border doesn't exceed width */
+  width: 100%; /* Restrict width to viewport */
+}
+
 /* Navbar styles */
 .navbar {
   background-color: #333; /* Adjust background color for navbar */
