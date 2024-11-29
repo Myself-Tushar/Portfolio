@@ -29,8 +29,8 @@ function Contact() {
       <br />
       <div className="social-links">
         <a href="https://www.linkedin.com/in/tushar-singha-35a6b1334/" className="hover:text-green-400">LinkedIn</a> | 
-        <a href="https://github.com/Active-TSR" className="hover:text-green-400"> GitHub</a> | 
-        <a href="https://x.com/activetsr10100" className="hover:text-green-400"> Twitter</a>
+        <a href="https://github.com/Myself-Tushar" className="hover:text-green-400"> GitHub</a> | 
+        <a href="https://x.com/Tech_TSR" className="hover:text-green-400"> Twitter</a>
       </div>
 
 <p class="footer-text">© 2024 Tech TSR. All rights reserved.</p>
