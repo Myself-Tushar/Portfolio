@@ -99,7 +99,7 @@ function App() {
 
     setTimeout(() => {
       setIsManual(false);
-    }, 5000);
+    }, 50000);
   };
 
   useEffect(() => {
@@ -108,7 +108,7 @@ function App() {
     const interval = setInterval(() => {
       const nextPage = currentPage === Math.ceil(allProjects.length / projectsPerPage) ? 1 : currentPage + 1;
       handlePageChange(nextPage, 'right');
-    }, 50000);
+    }, 500000);
 
     return () => clearInterval(interval);
   }, [currentPage, isManual, allProjects.length]);

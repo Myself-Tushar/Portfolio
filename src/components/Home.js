@@ -19,7 +19,7 @@ function Home() {
       {/* Call-to-Action Button */}
       <a
         href="#contact"
-        className="mt-6 px-6 py-3 text-sm sm:text-base md:text-lg bg-green-500 text-white rounded-md hover:bg-green-600 transition-all"
+       className="mt-6 px-6 py-3 text-sm sm:text-base md:text-lg bg-green-500 text-white rounded-md hover:bg-green-600 active:scale-95 active:bg-green-800 transition-all"
       >
         Get In Touch
       </a>
