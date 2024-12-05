@@ -21,7 +21,7 @@ function Contact() {
             <textarea className="form-control" rows="5" placeholder="Your Message" required></textarea>
           </div>
           <div className="col-12">
-            <button type="submit" className="btn btn-success btn-lg">Send Message</button>
+            <button type="submit" className="btn btn-success btn-lg transform transition-transform duration-200 active:scale-95 active:shadow-md">Send Message</button>
           </div>
         </form>
       </div>

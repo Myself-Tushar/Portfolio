@@ -51,6 +51,12 @@ function Skills() {
           </div>
         </div>
         <div className="skill-bar mb-6">
+          <p className="text-lg">Next.js</p>
+          <div className="w-full bg-gray-300 rounded-full h-4">
+            <div className="bg-pink-500 h-4 rounded-full" style={{ width: '45%' }}></div>
+          </div>
+        </div>
+        <div className="skill-bar mb-6">
           <p className="text-lg">Node.js</p>
           <div className="w-full bg-gray-300 rounded-full h-4">
             <div className="bg-green-600 h-4 rounded-full" style={{ width: '70%' }}></div>
@@ -59,7 +65,7 @@ function Skills() {
         <div className="skill-bar mb-6">
           <p className="text-lg">Express.js</p>
           <div className="w-full bg-gray-300 rounded-full h-4">
-            <div className="bg-green-700 h-4 rounded-full" style={{ width: '65%' }}></div>
+            <div className="bg-purple-700 h-4 rounded-full" style={{ width: '65%' }}></div>
           </div>
         </div>
 
