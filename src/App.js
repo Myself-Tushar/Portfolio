@@ -20,7 +20,7 @@ function App() {
   const projectsPerPage = 6;
   const allProjects = [
     {
-      imgSrc: "https://www.flamingoagency.com/wp-content/uploads/2023/06/dataworks-portfolio-1024x646.webp",
+      imgSrc: "https://storage.googleapis.com/limecube-live-c29b24b1/root/Blog/business-partners-illustration.jpg",
       title: "Business Project",
       description: "A management app for client tracking, sales, and reporting, designed for efficiency. Built with HTML, CSS, JavaScript, and backend integration."
     },
@@ -30,12 +30,12 @@ function App() {
       description: "An online shopping platform with features like product browsing, cart, and secure checkout. Built with HTML, CSS, JavaScript, and backend support."
     },
     {
-      imgSrc: "https://www.microsoft.com/en-us/microsoft-365/blog/wp-content/uploads/sites/2/2024/01/MSFT_M365_Jan_10_Blog-1_240111_V03-1024x576.webp",
+      imgSrc: "https://cc-west-blog-assets.s3.amazonaws.com/uploads/2019/10/AdobeStock_202307290-Converted.png",
       title: "Blog Project",
       description: "A personal blog with features like article posting, commenting, and user authentication. Built with React, Node.js, and MongoDB."
     },
     {
-      imgSrc: "https://sbr-technologies.com/wp-content/uploads/2021/07/Web-Development.jpg",
+      imgSrc: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrZHypUo7qH7v_bWcI4E9Fe6cNU9-iEOQkoz4JAalWKWOGj2KD",
       title: "Portfolio Project",
       description: "A personal portfolio website showcasing projects, skills, and contact details. Built with React and CSS."
     },
